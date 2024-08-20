@@ -204,7 +204,7 @@
 
 # 5 测试
 
-    (1) 更换 preprocessing.py中的train_dir,即训练集路径,提取每个类别的4张训练图像,对测试图像进行预处理,在2080ti显卡上,各步骤运行时间见preprocessing.log
+    (1) 更换 preprocessing.py中的train_dir,即训练集路径,提取每个类别的4张训练图像;更换 preprocessing.py中的TestSetDir,即测试集路径,对测试图像进行预处理.在2080ti显卡上,各步骤运行时间见preprocessing.log
     预处理命令：python preprocessing.py
 
     (2)进行推理,在2080ti显卡上,各步骤运行时间见test.log
