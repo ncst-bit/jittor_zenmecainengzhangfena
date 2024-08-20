@@ -1,3 +1,4 @@
+# jittor 开放域少样本视觉分类赛题
 # 1环境配置与目录结构
 
 ## 1.1 环境配置
@@ -215,22 +216,6 @@
     2 OpenAI官方预训练的ResNet101版本的CLIP模型,地址：https://openaipublic.azureedge.net/CLIP/models/8fa8567bab74a42d41c5915025a8e4538c3bdbe8804a470a72f30b0d94fab599/RN101.pt
     3 在ImageNet-1K上预训练的efficientnet-B6模型,地址：https://github.com/lukemelas/EfficientNet-PyTorch/releases/download/1.0/efficientnet-b6-c76e70fd.pth
     4 在ImageNet-1K上预训练的ResNet50模型,地址：https://cg.cs.tsinghua.edu.cn/jittor/assets/build/checkpoints/resnet50.pkl
-
-# 7 最终的模型参数量之和
-    
-    OpenAI官方预训练的ViT-B/32版本的CLIP模型:144.28MB
-    OpenAI官方预训练的ResNet101版本的CLIP模型:114.25MB
-    Clatech类别的ResNet50模型:22.65MB
-    Clatech类别的adapter模型:0.17MB
-    Food类别在CLIP视觉编码器基础上微调后的模型:84.08MB
-    Food类别的adapter模型:0.25MB
-    efficientnet-B6模型:41.26MB
-    
-    最终参数量之和：406.94MB
-
-# 8 联系方式
-    qq:205992690
-    手机:18617521225
 
 # 参考文献
 
