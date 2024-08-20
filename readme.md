@@ -6,9 +6,9 @@
 
 ## 1.2 目录结构
     .
-    ├── jCLIP
+    ├── jclip
     │   ├── bpe_simple_vocab_16e6.txt.gz
-    │   ├── CLIP.py
+    │   ├── clip.py
     │   ├── __init__.py
     │   ├── mha.py
     │   ├── model_change.py
