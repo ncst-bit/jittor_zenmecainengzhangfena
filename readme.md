@@ -230,10 +230,6 @@
     
     最终参数量之和：406.94MB
 
-# 8 联系方式
-    qq:205992690
-    手机:18617521225
-
 # 参考文献
 
     [1]Radford A, Kim J W, Hallacy C, et al. Learning transferable visual models from natural language supervision[C]//International conference on machine learning. PMLR, 2021: 8748-8763.
