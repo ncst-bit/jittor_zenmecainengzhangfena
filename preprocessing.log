@@ -10,6 +10,8 @@ nohup: ignoring input
 [38;5;2m[i 0817 15:29:18.122938 24 init.cc:62] Found cuda archs: [75,][m
 [38;5;2m[i 0817 15:29:20.634032 24 cuda_flags.cc:49] CUDA enabled.[m
 **********************************************
+get_Train_4_image
+**********************************************
 p8_splitTestImageTo4Dataset
 [38;5;2m[i 0817 15:34:32.915999 24 cuda_device_allocator.cc:30] 
 === display_memory_info ===
