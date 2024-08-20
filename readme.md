@@ -198,6 +198,7 @@
 
 # 4 训练
 
+    更换train.sh中的train_dir,即训练集路径
     在2080ti显卡上，各步骤运行时间见train.log
     训练命令：sh train.sh
     
