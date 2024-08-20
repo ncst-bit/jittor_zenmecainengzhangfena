@@ -1,13 +1,10 @@
 import os
 import time
-
+import shutil
 import p8_splitTestImageTo4Dataset
 import p9_finetuneCaltechAnimalCar
 import p10_crop_thudog
 import p11_get_thudog_query
-
-TestSetDir='./officalData/TestSetB/' #测试集路径
-model_clip_path='./publicModel/ViT-B-32.pkl'
 
 def p8():
 
@@ -74,6 +71,23 @@ def p11():
     end_time=time.time()
     running_time = end_time-start_time
     print('time cost : %.5f sec' %running_time)
+
+def get_Train_4_image(train_dir,train_4_image_list):
+    print('**********************************************')
+    print('get_Train_4_image')
+    for i in open(train_4_image_list).readlines():
+        i=i.replace('\n','')
+        img=i.split('/')[-1]
+        path=i.replace(img,'')
+        os.makedirs(path,exist_ok=True)
+        shutil.copy(train_dir+path.replace('./TrainSet_4_image','').replace('Caltech','Caltech-101').replace('Food','Food-101')+img,path+img)
+
+TestSetDir='./officalData/TestSetB/' #测试集路径
+model_clip_path='./publicModel/ViT-B-32.pkl'
+
+train_dir='./officalData/TrainSet/'
+train_4_image_list='./TrainSet_4_image.txt'
+get_Train_4_image(train_dir,train_4_image_list)
 
 p8()
 p9()
