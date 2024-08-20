@@ -8,16 +8,6 @@ import i15_infer_thudog
 import i16_infer_car
 import i17_infer_summary
 
-def get_Train_4_image(train_dir,train_4_image_list):
-    print('**********************************************')
-    print('get_Train_4_image')
-    for i in open(train_4_image_list).readlines():
-        i=i.replace('\n','')
-        img=i.split('/')[-1]
-        path=i.replace(img,'')
-        os.makedirs(path,exist_ok=True)
-        shutil.copy(train_dir+path.replace('./TrainSet_4_image','').replace('Caltech','Caltech-101').replace('Food','Food-101')+img,path+img)
-
 def i12():
     print('**********************************************')
     print('i12_infer_food')
@@ -93,10 +83,6 @@ def i17():
     i17_infer_summary.infer(animal_path, caltech_path, food_path, thudog_path, car_path)
 
 model_clip_path='./publicModel/ViT-B-32.pkl'
-train_dir='./officalData/TrainSet/'
-train_4_image_list='./TrainSet_4_image.txt'
-get_Train_4_image(train_dir,train_4_image_list)
-
 os.system("unzip trainset_b6_query.zip")
 os.system("unzip trainset_clip_query.zip")
 i12()
