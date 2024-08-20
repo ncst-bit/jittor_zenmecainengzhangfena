@@ -1,0 +1,53 @@
+nohup: ignoring input
+[38;5;2m[i 0817 16:23:08.436443 48 compiler.py:956] Jittor(1.3.8.5) src: /root/miniconda3/lib/python3.8/site-packages/jittor[m
+[38;5;2m[i 0817 16:23:08.439037 48 compiler.py:957] g++ at /usr/bin/g++(7.5.0)[m
+[38;5;2m[i 0817 16:23:08.439104 48 compiler.py:958] cache_path: /root/.cache/jittor/jt1.3.8/g++7.5.0/py3.8.19/Linux-5.4.0-12x7f/IntelRXeonRPlax40/default[m
+[38;5;2m[i 0817 16:23:08.442339 48 __init__.py:411] Found nvcc(11.1.105) at /usr/local/cuda/bin/nvcc.[m
+[38;5;2m[i 0817 16:23:08.445352 48 __init__.py:411] Found addr2line(2.30) at /usr/bin/addr2line.[m
+[38;5;2m[i 0817 16:23:08.598122 48 compiler.py:1011] cuda key:cu11.1.105_sm_75[m
+[38;5;2m[i 0817 16:23:08.994937 48 __init__.py:227] Total mem: 375.80GB, using 16 procs for compiling.[m
+[38;5;2m[i 0817 16:23:09.096290 48 jit_compiler.cc:28] Load cc_path: /usr/bin/g++[m
+[38;5;2m[i 0817 16:23:09.229323 48 init.cc:62] Found cuda archs: [75,][m
+[38;5;2m[i 0817 16:23:11.751551 48 cuda_flags.cc:49] CUDA enabled.[m
+**********************************************
+i12_infer_food
+[38;5;3m[w 0817 16:23:44.681946 48 nn.py:2280]  The `Parameter` interface isn't needed in Jittor, this interface
+does nothings and it is just used for compatible.
+    
+A Jittor Var is a Parameter
+when it is a member of Module, if you don't want a Jittor
+Var menber is treated as a Parameter, just name it startswith
+underscore `_`.
+    [m
+time cost : 52.03550 sec
+**********************************************
+i13_infer_animal
+[38;5;2m[i 0817 16:24:03.794432 48 dataset.py:664] Found 52 classes and 208 images.[m
+time cost : 41.39604 sec
+**********************************************
+i14_infer_caltech
+[38;5;2m[i 0817 16:24:47.499870 48 dataset.py:664] Found 91 classes and 364 images.[m
+[38;5;3m[w 0817 16:24:54.782613 48 nn.py:2280]  The `Parameter` interface isn't needed in Jittor, this interface
+does nothings and it is just used for compatible.
+    
+A Jittor Var is a Parameter
+when it is a member of Module, if you don't want a Jittor
+Var menber is treated as a Parameter, just name it startswith
+underscore `_`.
+    [m
+time cost : 24.87011 sec
+**********************************************
+i15_infer_thudog
+[38;5;2m[i 0817 16:25:10.062241 48 dataset.py:664] Found 130 classes and 520 images.[m
+[38;5;2m[i 0817 16:25:10.065516 48 dataset.py:664] Found 130 classes and 520 images.[m
+get_keys_values_clip
+get_clip_weights
+get_keys_values_b6
+create_trainset_pesudo_value_and_keys
+35892
+time cost : 79.24453 sec
+**********************************************
+i16_infer_car
+time cost : 51.56352 sec
+**********************************************
+i16_infer_summary

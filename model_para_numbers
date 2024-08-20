@@ -1,0 +1,22 @@
+#model:144.2749423980713
+#model2:114.24964332580566
+#res_50_caltech:22.647486686706543
+#adapter_caltech:0.171875
+#classifer_food:84.07944202423096
+#adapter_food:0.25122
+#efficinet_b6:41.26
+
+'''
+for p in model.parameters():
+    if len(p.shape)==1:
+        count+=p.shape[0]
+    elif len(p.shape)==2:
+        count+=p.shape[0]*p.shape[1]
+    elif len(p.shape)==3:
+        count += p.shape[0] * p.shape[1] * p.shape[2]
+    elif len(p.shape)==4:
+        count+=p.shape[0]*p.shape[1]*p.shape[2]*p.shape[3]
+    else:
+        print(p.shape)
+print(count/1024/1024)
+'''

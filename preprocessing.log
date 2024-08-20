@@ -1,0 +1,61 @@
+nohup: ignoring input
+[38;5;2m[i 0817 15:29:17.340390 24 compiler.py:956] Jittor(1.3.8.5) src: /root/miniconda3/lib/python3.8/site-packages/jittor[m
+[38;5;2m[i 0817 15:29:17.343034 24 compiler.py:957] g++ at /usr/bin/g++(7.5.0)[m
+[38;5;2m[i 0817 15:29:17.343103 24 compiler.py:958] cache_path: /root/.cache/jittor/jt1.3.8/g++7.5.0/py3.8.19/Linux-5.4.0-12x7f/IntelRXeonRPlax40/default[m
+[38;5;2m[i 0817 15:29:17.346288 24 __init__.py:411] Found nvcc(11.1.105) at /usr/local/cuda/bin/nvcc.[m
+[38;5;2m[i 0817 15:29:17.349352 24 __init__.py:411] Found addr2line(2.30) at /usr/bin/addr2line.[m
+[38;5;2m[i 0817 15:29:17.499071 24 compiler.py:1011] cuda key:cu11.1.105_sm_75[m
+[38;5;2m[i 0817 15:29:17.894738 24 __init__.py:227] Total mem: 375.80GB, using 16 procs for compiling.[m
+[38;5;2m[i 0817 15:29:17.995227 24 jit_compiler.cc:28] Load cc_path: /usr/bin/g++[m
+[38;5;2m[i 0817 15:29:18.122938 24 init.cc:62] Found cuda archs: [75,][m
+[38;5;2m[i 0817 15:29:20.634032 24 cuda_flags.cc:49] CUDA enabled.[m
+**********************************************
+p8_splitTestImageTo4Dataset
+[38;5;2m[i 0817 15:34:32.915999 24 cuda_device_allocator.cc:30] 
+=== display_memory_info ===
+ total_cpu_ram: 375.8GB total_device_ram: 10.75GB
+ hold_vars: 334 lived_vars: 3152 lived_ops: 3322
+ name: sfrl is_device: 1 used: 3.133GB(37.3%) unused: 5.272GB(62.7%) total: 8.404GB
+ name: sfrl is_device: 1 used: 580.3MB(91.7%) unused: 52.75MB(8.33%) total:   633MB
+ name: sfrl is_device: 0 used: 580.3MB(91.7%) unused: 52.75MB(8.33%) total:   633MB
+ name: sfrl is_device: 0 used:    92KB(8.98%) unused:   932KB(91%) total:     1MB
+ name: sfrl is_device: 0 used:     0 B(-nan%) unused:     0 B(-nan%) total:     0 B
+ name: temp is_device: 0 used:     0 B(-nan%) unused:     0 B(-nan%) total:     0 B
+ name: temp is_device: 1 used:     0 B(0%) unused:     4KB(100%) total:     4KB
+ cpu&gpu: 9.642GB gpu: 9.022GB cpu:   634MB
+ free: cpu(2.926GB) gpu( 38.5MB)
+ swap: total(    0 B) last(    0 B)
+===========================
+[m
+time cost : 331.34809 sec
+**********************************************
+p9_finetuneCaltechAnimalCar
+[38;5;2m[i 0817 15:36:42.114417 04 dataset.py:664] Found 91 classes and 364 images.[m
+[38;5;3m[w 0817 15:37:00.778550 04 nn.py:2280]  The `Parameter` interface isn't needed in Jittor, this interface
+does nothings and it is just used for compatible.
+    
+A Jittor Var is a Parameter
+when it is a member of Module, if you don't want a Jittor
+Var menber is treated as a Parameter, just name it startswith
+underscore `_`.
+    [m
+[38;5;2m[i 0817 15:37:34.971475 04 dataset.py:664] Found 91 classes and 364 images.[m
+[38;5;3m[w 0817 15:38:03.630838 04 nn.py:2280]  The `Parameter` interface isn't needed in Jittor, this interface
+does nothings and it is just used for compatible.
+    
+A Jittor Var is a Parameter
+when it is a member of Module, if you don't want a Jittor
+Var menber is treated as a Parameter, just name it startswith
+underscore `_`.
+    [m
+time cost : 140.14511 sec
+**********************************************
+p10_crop_thudog
+time cost : 571.86060 sec
+**********************************************
+p11_get_thudog_query
+get_query_clip
+get_query_b6
+[38;5;2m[i 0817 16:12:19.029451 16 cuda_flags.cc:49] CUDA enabled.[m
+[38;5;2m[i 0817 16:15:27.231919 16 cuda_flags.cc:49] CUDA enabled.[m
+time cost : 806.90876 sec
