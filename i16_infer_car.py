@@ -48,6 +48,8 @@ def infer(test_imgs_dir_car,model_clip_vit_path,model_clip_rn101_path):
 
     model, preprocess = clip.load(model_clip_vit_path)
     model2, preprocess2 = clip.load(model_clip_rn101_path)
+    model.eval()
+    model2.eval()
     classes = open('./classes_b.txt').read().splitlines()
 
     with open("./car_cate.json",'r') as f:
