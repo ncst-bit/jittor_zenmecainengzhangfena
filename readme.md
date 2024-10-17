@@ -218,6 +218,18 @@
     3 在ImageNet-1K上预训练的efficientnet-B6模型,地址：https://github.com/lukemelas/EfficientNet-PyTorch/releases/download/1.0/efficientnet-b6-c76e70fd.pth
     4 在ImageNet-1K上预训练的ResNet50模型,地址：https://cg.cs.tsinghua.edu.cn/jittor/assets/build/checkpoints/resnet50.pkl
 
+# 7 最终的模型参数量之和
+
+    1 OpenAI官方预训练的ViT-B/32版本的CLIP模型,地址：https://openaipublic.azureedge.net/CLIP/models/40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af/ViT-B-32.pt
+    2 OpenAI官方预训练的ResNet101版本的CLIP模型,地址：https://openaipublic.azureedge.net/CLIP/models/8fa8567bab74a42d41c5915025a8e4538c3bdbe8804a470a72f30b0d94fab599/RN101.pt
+    3 在ImageNet-1K上预训练的efficientnet-B6模型,地址：https://github.com/lukemelas/EfficientNet-PyTorch/releases/download/1.0/efficientnet-b6-c76e70fd.pth
+    4 在ImageNet-1K上预训练的ResNet50模型,地址：https://cg.cs.tsinghua.edu.cn/jittor/assets/build/checkpoints/resnet50.pkl
+
+# 8 联系方式
+
+    qq:205992690
+    手机:18617521225
+    
 # 参考文献
 
     [1]Radford A, Kim J W, Hallacy C, et al. Learning transferable visual models from natural language supervision[C]//International conference on machine learning. PMLR, 2021: 8748-8763.
