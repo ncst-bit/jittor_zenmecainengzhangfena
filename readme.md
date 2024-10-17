@@ -229,7 +229,10 @@
 
     qq:205992690
     手机:18617521225
-    
+
+# License
+This project is Apache 2.0 licensed.
+
 # 参考文献
 
     [1]Radford A, Kim J W, Hallacy C, et al. Learning transferable visual models from natural language supervision[C]//International conference on machine learning. PMLR, 2021: 8748-8763.
